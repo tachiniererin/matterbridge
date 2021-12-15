@@ -11,9 +11,9 @@ import (
 	"github.com/42wim/matterbridge/hook/rockethook"
 	"github.com/42wim/matterbridge/matterhook"
 	lru "github.com/hashicorp/golang-lru"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/models"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/realtime"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/rest"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/models"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/realtime"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/rest"
 )
 
 type Brocketchat struct {
@@ -164,13 +164,10 @@ func (b *Brocketchat) Send(msg config.Message) (string, error) {
 		}
 	}
 
-	smsg := &models.Message{
-		RoomID: channel.ID,
-		Msg:    msg.Text,
-		PostMessage: models.PostMessage{
-			Avatar: msg.Avatar,
-			Alias:  msg.Username,
-		},
+	smsg := b.c.NewMessage(channel, msg.Text)
+	smsg.PostMessage = models.PostMessage{
+		Avatar: msg.Avatar,
+		Alias:  msg.Username,
 	}
 
 	rmsg, err := b.c.SendMessage(smsg)

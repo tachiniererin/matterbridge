@@ -13,10 +13,10 @@ import (
 	"github.com/42wim/matterbridge/bridge/helper"
 	"github.com/42wim/matterbridge/hook/rockethook"
 	"github.com/42wim/matterbridge/matterhook"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/models"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/realtime"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/rest"
 	"github.com/nelsonken/gomf"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/models"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/realtime"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/rest"
 )
 
 func (b *Brocketchat) doConnectWebhookBind() error {

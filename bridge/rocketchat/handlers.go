@@ -5,7 +5,7 @@ import (
 
 	"github.com/42wim/matterbridge/bridge/config"
 	"github.com/42wim/matterbridge/bridge/helper"
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/models"
+	"github.com/tachiniererin/Rocket.Chat.Go.SDK/models"
 )
 
 func (b *Brocketchat) handleRocket() {

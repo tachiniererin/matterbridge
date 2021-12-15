@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/matterbridge/Rocket.Chat.Go.SDK/models"
+	"github.com/RocketChat/Rocket.Chat.Go.SDK/models"
 )
 
 type ChannelsResponse struct {
@@ -53,7 +53,6 @@ func (c *Client) GetPrivateGroups() (*GroupsResponse, error) {
 
 	return response, nil
 }
-
 
 // GetJoinedChannels returns all channels that the user has joined.
 //

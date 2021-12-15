@@ -22,7 +22,6 @@ require (
 	github.com/labstack/echo/v4 v4.6.1
 	github.com/lrstanley/girc v0.0.0-20211023233735-147f0ff77566
 	github.com/matrix-org/gomatrix v0.0.0-20210324163249-be2af5ef2e16
-	github.com/matterbridge/Rocket.Chat.Go.SDK v0.0.0-20211016222428-79310a412696
 	github.com/matterbridge/discordgo v0.21.2-0.20210201201054-fb39a175b4f7
 	github.com/matterbridge/go-xmpp v0.0.0-20211030125215-791a06c5f1be
 	github.com/matterbridge/gozulipbot v0.0.0-20211023205727-a19d6c1f3b75
@@ -42,6 +41,7 @@ require (
 	github.com/slack-go/slack v0.10.0
 	github.com/spf13/viper v1.9.0
 	github.com/stretchr/testify v1.7.0
+	github.com/tachiniererin/Rocket.Chat.Go.SDK v0.0.0-20211215093233-e5e9f460899c
 	github.com/vincent-petithory/dataurl v1.0.0
 	github.com/writeas/go-strip-markdown v2.0.1+incompatible
 	github.com/yaegashi/msgraph.go v0.1.4
@@ -56,6 +56,7 @@ require (
 require (
 	github.com/Benau/go_rlottie v0.0.0-20210807002906-98c1b2421989 // indirect
 	github.com/Jeffail/gabs v1.4.0 // indirect
+	github.com/RocketChat/Rocket.Chat.Go.SDK v0.0.0-20210506200512-3b3352a919f0 // indirect
 	github.com/apex/log v1.9.0 // indirect
 	github.com/av-elier/go-decimal-to-rational v0.0.0-20191127152832-89e6aad02ecf // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
@@ -104,6 +105,7 @@ require (
 	github.com/shazow/rateio v0.0.0-20200113175441-4461efc8bdc4 // indirect
 	github.com/sizeofint/webpanimation v0.0.0-20210809145948-1d2b32119882 // indirect
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e // indirect
+	github.com/sony/sonyflake v1.0.0 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
